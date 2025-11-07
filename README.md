@@ -78,20 +78,6 @@ This confirms successful reproducibility even if small numeric differences exist
 which are expected due to environment/model version differences.
 
 ------------------------------------------------------------
-Git Submission Notes
-------------------------------------------------------------
-Do not push large checkpoints or environments.
-
-Recommended .gitignore:
-venv/
-BERT_wiki/
-__pycache__/
-*.jsonl
-*.bin
-*.pt
-*.log
-
-------------------------------------------------------------
 Citation
 ------------------------------------------------------------
 @InProceedings{NAACL-2025-Maddela,
