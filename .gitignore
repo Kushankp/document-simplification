@@ -1,0 +1,37 @@
+
+---
+
+### `.gitignore`
+
+```gitignore
+# environments / caches
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# logs & scratch
+*.log
+*.tmp
+*.DS_Store
+
+# large artifacts (don’t push)
+BERT_wiki/
+*.bin
+*.pt
+*.ckpt
+*.h5
+*.model
+*.safetensors
+
+# outputs (keep local; attach to submission only if required)
+*.jsonl
+output*.json
+agg_output_*.jsonl
+run_agg_wrapper.log
+
+# IDE
+.vscode/
+.idea/
