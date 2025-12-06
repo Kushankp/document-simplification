@@ -9,10 +9,6 @@ from metrics.bleu import BLEU
 from metrics.D_SARI import DSARI
 from metrics.bscore import BERTScore
 
-# from transformers import LlamaForCausalLM, AutoTokenizer
-# from metrics.llama_metric import LLAMA_metric
-
-
 def compute_metrics(dataset, metric):
     for metric in metrics:
 
@@ -66,10 +62,6 @@ if __name__ == '__main__':
     parser.add_argument("--dataset")
     parser.add_argument("--output")
     args=parser.parse_args()
-
-    # model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
-    # tokenizer = AutoTokenizer.from_pretrained(model_id)
-    # model = LlamaForCausalLM.from_pretrained(model_id)
 
     with open(args.dataset) as fp:
         dataset = [json.loads(line.strip()) for line in fp]
